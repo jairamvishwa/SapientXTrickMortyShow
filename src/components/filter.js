@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSearch, faSortAmountUpAlt, faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faSortAmountUpAlt, faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Filter = ({ handleSearch, handleAscending, handleDescending }) => {
 

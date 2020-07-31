@@ -78,7 +78,7 @@ p {
 
 /* banner image CSS */
 .banner {
-    background: url(/static/media/banner.1bb67121.jpg) center top;
+    background: url(../src/images/banner.jpg) center top;
     position: absolute;
     left: 0;
     right: 0;
@@ -336,6 +336,12 @@ span.detail-info {
     }
     .filter .form-control {
         margin: 10px 0;
+    }
+    .inputWithIcon i {
+        top: 10px;
+    }
+    .btn {
+        padding: 6px 9px;
     }
     .btn-pos {
         display: block;
