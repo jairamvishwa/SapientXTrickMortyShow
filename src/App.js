@@ -26,7 +26,7 @@ function App() {
         setfData(data);
     }, [data]);
 
-    // create const for key handler from input pass the value
+    // Key handler for search 
     const handleSearch = key => {
         //filter the results by name 
         const getFilterData = data.filter(item => {
@@ -35,6 +35,7 @@ function App() {
         setfData(getFilterData);
     }
 
+    // compare name with value for sorting  
     const compare = (a, b) => {
         let name1 = a.name.toUpperCase();
         let name2 = b.name.toUpperCase();
@@ -45,11 +46,13 @@ function App() {
         return count;
     }
 
+    //ascending sorting
     const handleAscending = () => {
         let newFdata = fData.sort(compare);
         setfData([...newFdata]);
     }
 
+    //descending sorting
     const handleDescending = () => {
         handleAscending();
         let newFdata = fData.reverse();
